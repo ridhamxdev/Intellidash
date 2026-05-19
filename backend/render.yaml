@@ -1,13 +1,14 @@
 services:
   - type: web
-    name: intellidash-backend
+    name: intellidash
     runtime: python
-    region: singapore          # closest to India; change to oregon/frankfurt if needed
+    region: oregon
     plan: free
+    rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
         value: "3.11.0"
       - key: FRONTEND_URL
-        sync: false            # set this manually in Render dashboard after Vercel deploy
+        sync: false
