@@ -235,75 +235,171 @@ def dashboard_kpis() -> dict:
         "filename": store.get("filename", ""),
     }
 
-    # Revenue over time
-    revenue_trend = _revenue_over_time(df)
-    # Sales by region
-    sales_by_region = _sales_by_region(df)
-    # Customer segmentation
-    customer_seg = _customer_segmentation(df)
-    # Monthly trend
-    monthly_trend = _monthly_trend(df)
+    # Auto-detect which columns are being used for each chart
+    detected = {
+        "date_col": _find_date_col(df),
+        "revenue_col": _find_revenue_col(df),
+        "region_col": _find_region_col(df),
+        "segment_col": _find_segment_col(df),
+    }
 
     return {
         "kpis": kpis,
-        "revenue_trend": revenue_trend,
-        "sales_by_region": sales_by_region,
-        "customer_segmentation": customer_seg,
-        "monthly_trend": monthly_trend,
+        "revenue_trend": _revenue_over_time(df),
+        "sales_by_region": _sales_by_region(df),
+        "customer_segmentation": _customer_segmentation(df),
+        "monthly_trend": _monthly_trend(df),
+        "detected_columns": detected,
     }
 
 
+# ─── Smart column finders ─────────────────────────────────────────────────────
+
+def _find_date_col(df: pd.DataFrame):
+    """Return the best date-like column, or None."""
+    # First: columns whose name strongly suggests a date
+    strong_keywords = ["date", "time", "day", "created", "updated", "period", "week", "timestamp"]
+    for kw in strong_keywords:
+        for c in df.columns:
+            if kw in c.lower():
+                # Verify it actually parses as dates
+                try:
+                    parsed = pd.to_datetime(df[c], errors="coerce")
+                    if parsed.notna().sum() > len(df) * 0.5:
+                        return c
+                except Exception:
+                    pass
+
+    # Fallback: any object column where >50% of values parse as real dates
+    for c in df.select_dtypes(include=["object"]).columns:
+        # Skip columns that are clearly categorical (low unique count, short strings)
+        if df[c].nunique() < 10:
+            continue
+        try:
+            sample = df[c].dropna().head(20)
+            parsed = pd.to_datetime(sample, errors="coerce")
+            if parsed.notna().sum() >= len(sample) * 0.8:
+                return c
+        except Exception:
+            pass
+    return None
+
+
+def _find_revenue_col(df: pd.DataFrame):
+    """Return the best numeric revenue/sales/profit column, or the largest-mean numeric col."""
+    keywords = ["revenue", "sales", "gross", "net_sales", "income",
+                "profit", "amount", "value", "price", "earning", "turnover"]
+    for kw in keywords:
+        for c in df.columns:
+            if kw in c.lower() and pd.api.types.is_numeric_dtype(df[c]):
+                return c
+    # Fallback: numeric column with the highest mean (likely a monetary column)
+    numeric = df.select_dtypes(include=[np.number])
+    if numeric.empty:
+        return None
+    return numeric.mean().idxmax()
+
+
+def _find_region_col(df: pd.DataFrame):
+    """Return the best categorical column representing a geographic/group dimension."""
+    keywords = ["region", "area", "zone", "location", "city", "state",
+                "country", "store", "branch", "territory", "market", "site"]
+    for kw in keywords:
+        for c in df.columns:
+            if kw in c.lower() and df[c].dtype == object:
+                n_unique = df[c].nunique()
+                if 2 <= n_unique <= 30:
+                    return c
+    # Fallback: any low-cardinality categorical column (not ID-like)
+    for c in df.select_dtypes(include=["object"]).columns:
+        n_unique = df[c].nunique()
+        if 2 <= n_unique <= 20 and "id" not in c.lower():
+            return c
+    return None
+
+
+def _find_segment_col(df: pd.DataFrame):
+    """Return the best categorical column for segmentation/grouping."""
+    keywords = ["segment", "type", "tier", "category", "class", "group",
+                "level", "grade", "status", "kind", "department", "role",
+                "education", "attrition", "promotion", "overtime"]
+    for kw in keywords:
+        for c in df.columns:
+            if kw in c.lower() and df[c].dtype == object:
+                n_unique = df[c].nunique()
+                if 2 <= n_unique <= 15:
+                    return c
+    # Fallback: lowest-cardinality categorical column
+    cat_cols = [(c, df[c].nunique()) for c in df.select_dtypes(include=["object"]).columns
+                if 2 <= df[c].nunique() <= 10 and "id" not in c.lower()]
+    if cat_cols:
+        return min(cat_cols, key=lambda x: x[1])[0]
+    return None
+
+
+# ─── Dashboard chart builders ─────────────────────────────────────────────────
+
 def _revenue_over_time(df: pd.DataFrame) -> list:
-    date_cols = [c for c in df.columns if "date" in c.lower()]
-    rev_cols = [c for c in df.columns if "revenue" in c.lower() or "sales" in c.lower()]
-    if not date_cols or not rev_cols:
+    date_col = _find_date_col(df)
+    rev_col = _find_revenue_col(df)
+    if not date_col or not rev_col:
         return []
     try:
-        tmp = df[[date_cols[0], rev_cols[0]]].copy()
-        tmp[date_cols[0]] = pd.to_datetime(tmp[date_cols[0]], errors="coerce")
+        tmp = df[[date_col, rev_col]].copy()
+        tmp[date_col] = pd.to_datetime(tmp[date_col], errors="coerce")
         tmp = tmp.dropna()
-        tmp = tmp.sort_values(date_cols[0])
-        # Resample weekly
-        tmp = tmp.set_index(date_cols[0])
-        weekly = tmp[rev_cols[0]].resample("W").sum().reset_index()
+        if tmp.empty:
+            return []
+        tmp = tmp.sort_values(date_col).set_index(date_col)
+        # Use weekly resampling if > 60 rows, else daily
+        rule = "W" if len(tmp) > 60 else "D"
+        resampled = tmp[rev_col].resample(rule).sum().reset_index()
         return [
-            {"date": row[date_cols[0]].strftime("%Y-%m-%d"), "revenue": round(float(row[rev_cols[0]]), 2)}
-            for _, row in weekly.iterrows()
+            {"date": row[date_col].strftime("%Y-%m-%d"), "revenue": round(float(row[rev_col]), 2)}
+            for _, row in resampled.iterrows()
         ]
     except Exception:
         return []
 
 
 def _sales_by_region(df: pd.DataFrame) -> list:
-    region_col = next((c for c in df.columns if "region" in c.lower()), None)
-    rev_col = next((c for c in df.columns if "revenue" in c.lower()), None)
+    region_col = _find_region_col(df)
+    rev_col = _find_revenue_col(df)
     if not region_col or not rev_col:
         return []
-    grouped = df.groupby(region_col)[rev_col].sum().reset_index()
-    grouped.columns = ["region", "revenue"]
-    grouped["revenue"] = grouped["revenue"].round(2)
-    return grouped.sort_values("revenue", ascending=False).to_dict(orient="records")
+    try:
+        grouped = df.groupby(region_col)[rev_col].sum().reset_index()
+        grouped.columns = ["region", "revenue"]
+        grouped["revenue"] = grouped["revenue"].round(2)
+        return grouped.sort_values("revenue", ascending=False).head(10).to_dict(orient="records")
+    except Exception:
+        return []
 
 
 def _customer_segmentation(df: pd.DataFrame) -> list:
-    seg_col = next((c for c in df.columns if "segment" in c.lower() or "customer" in c.lower()), None)
+    seg_col = _find_segment_col(df)
     if not seg_col:
         return []
-    vc = df[seg_col].value_counts()
-    return [{"segment": str(k), "count": int(v)} for k, v in vc.items()]
+    try:
+        vc = df[seg_col].value_counts().head(10)
+        return [{"segment": str(k), "count": int(v)} for k, v in vc.items()]
+    except Exception:
+        return []
 
 
 def _monthly_trend(df: pd.DataFrame) -> list:
-    date_cols = [c for c in df.columns if "date" in c.lower()]
-    rev_cols = [c for c in df.columns if "revenue" in c.lower()]
-    if not date_cols or not rev_cols:
+    date_col = _find_date_col(df)
+    rev_col = _find_revenue_col(df)
+    if not date_col or not rev_col:
         return []
     try:
-        tmp = df[[date_cols[0], rev_cols[0]]].copy()
-        tmp[date_cols[0]] = pd.to_datetime(tmp[date_cols[0]], errors="coerce")
+        tmp = df[[date_col, rev_col]].copy()
+        tmp[date_col] = pd.to_datetime(tmp[date_col], errors="coerce")
         tmp = tmp.dropna()
-        tmp["month"] = tmp[date_cols[0]].dt.to_period("M")
-        monthly = tmp.groupby("month")[rev_cols[0]].agg(["sum", "mean", "count"]).reset_index()
+        if tmp.empty:
+            return []
+        tmp["month"] = tmp[date_col].dt.to_period("M")
+        monthly = tmp.groupby("month")[rev_col].agg(["sum", "mean", "count"]).reset_index()
         return [
             {
                 "month": str(row["month"]),

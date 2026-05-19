@@ -1,0 +1,401 @@
+Employee_ID,Department,Job_Role,Education,Age,Experience_Years,Monthly_Salary,Performance_Score,Job_Satisfaction,OverTime,Tenure_Years,Attrition
+1000,Sales,Analyst,Bachelor,42,5,75532.39,4.5,1.4,No,9,Yes
+1001,Engineering,Manager,Bachelor,49,14,100662.1,2.2,1.4,No,10,Yes
+1002,Engineering,Coordinator,PhD,58,19,64325.34,2.1,4.4,No,9,Yes
+1003,Engineering,Coordinator,Bachelor,57,27,152569.01,4.0,1.4,No,6,No
+1004,HR,Senior Engineer,PhD,58,2,65223.35,3.6,4.1,No,10,No
+1005,Marketing,Director,Diploma,37,6,64070.03,4.1,2.0,No,8,Yes
+1006,Engineering,Coordinator,PhD,40,3,92044.33,4.3,1.6,No,11,Yes
+1007,Support,Analyst,PhD,43,12,105462.3,3.8,3.3,No,2,No
+1008,Operations,Executive,PhD,52,23,107865.61,4.1,3.6,No,5,No
+1009,Sales,Senior Engineer,Master,23,2,62328.63,3.1,3.4,No,1,No
+1010,Support,Executive,PhD,37,13,59133.79,2.2,2.8,No,3,Yes
+1011,Sales,Manager,Master,48,12,119034.67,4.0,2.5,Yes,3,Yes
+1012,Marketing,Manager,Bachelor,22,1,72689.98,2.8,1.6,No,10,Yes
+1013,HR,Executive,Diploma,51,29,109021.47,4.6,4.8,No,7,No
+1014,Engineering,Analyst,Bachelor,28,4,68634.12,2.2,1.8,Yes,10,Yes
+1015,Engineering,Manager,Diploma,58,5,81542.57,3.6,4.8,No,1,No
+1016,HR,Executive,PhD,31,5,102202.66,3.4,1.5,No,8,No
+1017,Sales,Coordinator,Bachelor,27,2,62499.64,2.3,2.4,No,12,No
+1018,Support,Analyst,PhD,35,9,63928.37,4.7,4.0,No,11,No
+1019,Finance,Senior Engineer,Master,55,12,119571.0,4.7,2.4,Yes,13,No
+1020,Engineering,Senior Engineer,Diploma,34,13,90648.45,4.4,1.8,No,1,Yes
+1021,Operations,Senior Engineer,PhD,38,7,102092.95,4.1,4.8,No,13,No
+1022,Engineering,Executive,PhD,27,2,88053.5,3.0,2.9,No,14,No
+1023,HR,Director,PhD,27,6,89494.24,2.4,2.6,Yes,3,No
+1024,Sales,Coordinator,Diploma,27,6,59925.4,4.8,3.9,Yes,1,No
+1025,Finance,Coordinator,Master,31,10,95933.65,4.5,4.9,No,3,No
+1026,Sales,Manager,Bachelor,23,1,76726.27,2.3,4.0,Yes,14,Yes
+1027,HR,Manager,Bachelor,38,7,51236.87,2.9,2.0,No,9,Yes
+1028,Finance,Manager,Bachelor,44,15,77096.35,3.6,4.3,No,3,No
+1029,Finance,Director,Bachelor,50,25,82373.61,2.5,1.0,Yes,8,Yes
+1030,Sales,Manager,PhD,57,2,70892.09,3.7,4.1,Yes,1,No
+1031,Finance,Coordinator,Master,24,1,88771.89,3.5,3.2,Yes,10,Yes
+1032,Marketing,Coordinator,Master,39,15,58049.52,3.5,2.0,No,15,No
+1033,Operations,Manager,Diploma,50,5,81840.66,3.2,2.6,No,2,No
+1034,Sales,Executive,Master,26,2,52631.84,4.7,1.6,No,15,Yes
+1035,Finance,Executive,PhD,28,4,42776.05,4.7,1.7,Yes,7,Yes
+1036,HR,Senior Engineer,PhD,48,7,80438.28,3.1,2.4,No,1,Yes
+1037,Engineering,Senior Engineer,PhD,54,3,89195.6,2.3,4.7,Yes,2,No
+1038,Sales,Coordinator,Diploma,24,1,65950.23,3.3,4.6,No,7,No
+1039,Marketing,Analyst,Bachelor,42,3,87948.89,2.8,4.2,Yes,2,Yes
+1040,HR,Senior Engineer,Master,38,3,64866.67,2.8,1.5,Yes,9,Yes
+1041,Sales,Senior Engineer,PhD,24,3,61383.26,4.1,4.8,Yes,3,Yes
+1042,Engineering,Analyst,Master,55,25,121647.03,4.0,2.1,Yes,1,No
+1043,HR,Coordinator,Diploma,54,16,122696.25,2.7,2.8,No,11,No
+1044,Engineering,Manager,Bachelor,54,10,71118.19,3.0,4.3,Yes,6,Yes
+1045,Marketing,Coordinator,Master,26,3,25000,3.3,1.2,No,11,No
+1046,Marketing,Manager,Bachelor,40,2,63867.45,3.3,2.1,No,9,No
+1047,Finance,Director,Master,41,7,86051.26,3.1,1.0,No,5,Yes
+1048,Operations,Manager,Bachelor,37,1,103517.49,2.4,3.3,No,5,Yes
+1049,Support,Senior Engineer,Diploma,55,28,140117.93,4.3,3.6,No,7,No
+1050,Operations,Coordinator,Master,31,5,71457.73,2.1,4.3,No,12,No
+1051,Support,Director,Master,55,25,87363.51,3.5,4.3,Yes,10,No
+1052,Engineering,Director,Bachelor,27,1,95997.71,4.9,2.5,No,9,No
+1053,Finance,Coordinator,Bachelor,56,22,119004.19,2.7,2.1,No,12,No
+1054,Sales,Director,Diploma,55,3,82091.66,4.4,4.4,Yes,4,No
+1055,Engineering,Coordinator,Master,53,28,96742.16,3.1,2.9,No,13,No
+1056,Engineering,Executive,PhD,26,5,83297.48,4.2,2.2,No,8,Yes
+1057,HR,Executive,Diploma,28,6,88637.89,2.7,3.0,No,5,No
+1058,Marketing,Executive,Master,29,4,70597.7,3.4,2.2,Yes,8,No
+1059,Sales,Coordinator,PhD,35,2,81045.86,3.7,1.6,No,6,Yes
+1060,HR,Executive,PhD,29,6,81784.11,3.5,1.1,Yes,11,No
+1061,Marketing,Executive,Bachelor,31,7,121515.56,3.0,2.3,No,13,Yes
+1062,Engineering,Senior Engineer,Diploma,34,12,120534.42,2.8,1.3,No,10,No
+1063,Sales,Senior Engineer,Diploma,39,2,77215.23,2.8,1.2,No,3,No
+1064,Finance,Coordinator,Master,54,11,101435.22,4.9,4.5,No,15,No
+1065,Sales,Director,PhD,27,1,86471.68,4.8,2.6,No,13,No
+1066,Marketing,Director,PhD,53,2,101903.89,2.5,2.7,No,5,No
+1067,Sales,Director,Master,47,21,93211.61,2.7,2.9,No,2,No
+1068,HR,Executive,Master,26,2,33044.65,3.7,2.8,No,13,No
+1069,Marketing,Senior Engineer,Master,57,7,89361.09,2.7,1.7,No,4,Yes
+1070,Marketing,Manager,Master,23,2,43868.46,2.6,2.1,Yes,10,No
+1071,Marketing,Analyst,Master,27,3,93726.97,4.7,2.5,No,7,No
+1072,Support,Coordinator,Diploma,24,2,58098.21,3.4,3.3,Yes,15,Yes
+1073,Engineering,Director,Diploma,50,8,47043.81,4.3,1.9,Yes,11,No
+1074,Sales,Director,PhD,27,5,74675.66,2.4,3.3,Yes,5,No
+1075,Finance,Manager,Diploma,55,21,108669.12,3.3,4.1,Yes,9,Yes
+1076,Operations,Manager,Diploma,38,8,83641.66,3.6,5.0,No,6,No
+1077,Engineering,Analyst,Master,55,8,89270.62,3.6,1.1,No,5,No
+1078,HR,Analyst,PhD,53,29,111359.86,2.8,3.7,No,4,No
+1079,Engineering,Manager,Diploma,48,12,74831.5,4.0,1.8,No,9,No
+1080,HR,Coordinator,Master,34,5,78606.3,3.4,2.1,No,10,Yes
+1081,HR,Analyst,Master,36,8,69532.31,3.3,3.7,No,3,No
+1082,Engineering,Analyst,Master,23,1,39779.97,2.6,2.8,No,12,No
+1083,Marketing,Director,Diploma,43,7,99850.34,2.6,4.7,No,1,No
+1084,Finance,Manager,Diploma,45,11,81714.76,2.2,1.3,No,2,No
+1085,Marketing,Coordinator,Diploma,44,10,92199.42,4.5,2.7,Yes,4,No
+1086,HR,Analyst,Bachelor,34,6,50751.39,2.1,2.6,No,1,Yes
+1087,Marketing,Senior Engineer,Bachelor,38,7,114019.23,4.2,4.6,No,6,No
+1088,Engineering,Executive,Diploma,38,11,102835.46,4.2,3.4,Yes,4,Yes
+1089,Engineering,Director,PhD,46,9,80398.53,4.7,4.3,Yes,3,No
+1090,Finance,Manager,Diploma,31,10,87056.58,3.4,4.1,No,2,No
+1091,Finance,Senior Engineer,Master,32,4,114598.9,3.2,3.6,No,9,No
+1092,Sales,Manager,Master,49,4,97444.53,2.3,1.4,No,8,No
+1093,Support,Director,Bachelor,48,15,96700.77,3.9,3.7,No,14,No
+1094,Sales,Manager,PhD,40,10,84300.68,2.8,2.0,No,4,Yes
+1095,Operations,Analyst,Diploma,34,6,94318.01,2.2,2.0,Yes,4,No
+1096,Marketing,Manager,Bachelor,24,1,108699.32,2.7,2.8,No,1,No
+1097,Finance,Manager,Diploma,25,2,70368.79,3.8,4.3,Yes,6,No
+1098,Sales,Senior Engineer,Bachelor,38,1,94099.75,3.9,1.9,No,1,Yes
+1099,Engineering,Manager,Bachelor,35,14,107811.27,2.0,2.3,No,5,Yes
+1100,Operations,Manager,Diploma,53,18,84025.05,4.4,3.7,Yes,2,No
+1101,Marketing,Director,PhD,39,14,94919.01,5.0,3.7,No,1,No
+1102,HR,Manager,Bachelor,48,14,130297.43,4.4,3.6,No,12,No
+1103,Marketing,Executive,Master,49,6,88696.14,3.3,4.3,No,10,No
+1104,Marketing,Director,Master,30,1,80209.95,4.4,2.6,No,10,No
+1105,Support,Manager,PhD,31,6,81139.1,2.8,3.1,Yes,8,Yes
+1106,Finance,Director,Master,30,1,92393.84,2.2,4.7,No,12,Yes
+1107,Finance,Manager,Bachelor,36,10,82085.5,3.2,4.4,No,3,No
+1108,Support,Director,Bachelor,47,17,110960.49,2.4,4.9,Yes,9,Yes
+1109,HR,Senior Engineer,Master,42,4,94704.08,3.2,2.8,No,11,No
+1110,Sales,Executive,Diploma,49,13,83505.68,3.3,1.1,No,8,No
+1111,Support,Executive,Bachelor,33,8,63110.46,3.2,1.3,No,2,Yes
+1112,HR,Director,Master,24,3,101178.51,2.9,3.9,Yes,9,Yes
+1113,HR,Senior Engineer,Master,23,1,99894.67,5.0,3.9,Yes,15,Yes
+1114,HR,Manager,PhD,36,2,87286.9,2.8,2.3,No,14,Yes
+1115,Sales,Senior Engineer,PhD,54,30,98991.01,3.4,3.4,No,9,No
+1116,Support,Senior Engineer,Bachelor,24,1,72207.87,4.8,3.7,No,3,No
+1117,Operations,Analyst,PhD,55,2,91996.63,3.9,2.4,No,10,No
+1118,Sales,Senior Engineer,PhD,56,21,130419.71,3.1,2.5,No,10,No
+1119,Marketing,Senior Engineer,PhD,27,4,47340.63,2.7,3.5,Yes,9,Yes
+1120,Engineering,Manager,Diploma,22,1,69440.08,3.9,2.7,No,15,No
+1121,Engineering,Coordinator,PhD,36,10,101923.1,4.0,1.1,Yes,5,No
+1122,Support,Manager,Master,56,8,76123.0,2.4,2.5,No,1,Yes
+1123,Engineering,Analyst,PhD,50,4,90979.38,2.2,1.6,No,5,Yes
+1124,HR,Manager,Master,50,20,136223.66,2.7,4.6,Yes,1,Yes
+1125,Sales,Executive,Master,32,1,57987.94,4.7,1.4,No,4,No
+1126,Engineering,Senior Engineer,Bachelor,55,20,90166.88,3.2,3.5,No,5,No
+1127,HR,Analyst,Diploma,52,23,88934.76,3.6,2.5,No,12,No
+1128,Operations,Coordinator,Diploma,33,4,90966.57,3.9,1.5,No,5,No
+1129,Engineering,Manager,PhD,55,9,91368.43,2.9,4.7,Yes,9,Yes
+1130,Sales,Executive,Diploma,37,7,112638.91,3.0,4.5,No,10,No
+1131,Sales,Coordinator,PhD,52,27,106222.49,3.6,1.0,Yes,12,Yes
+1132,Sales,Senior Engineer,Master,35,7,74923.65,4.7,1.6,Yes,10,Yes
+1133,Engineering,Analyst,PhD,23,1,61293.73,2.1,3.8,Yes,12,No
+1134,Sales,Manager,Master,34,9,89030.06,4.6,4.7,No,2,No
+1135,Operations,Senior Engineer,Diploma,29,1,64636.81,2.1,4.4,Yes,11,No
+1136,Marketing,Senior Engineer,Bachelor,28,2,97894.34,2.6,2.3,No,6,Yes
+1137,Marketing,Coordinator,Bachelor,45,11,110116.88,4.3,3.4,No,14,No
+1138,Sales,Director,Bachelor,48,1,45166.3,3.0,3.8,No,10,No
+1139,Marketing,Analyst,Bachelor,58,27,133290.58,2.9,2.7,No,4,No
+1140,Support,Coordinator,PhD,44,16,123223.79,4.5,4.9,No,6,No
+1141,Operations,Analyst,Diploma,58,6,105839.36,2.9,1.9,Yes,2,No
+1142,Engineering,Senior Engineer,Master,57,26,132084.89,2.3,4.7,Yes,11,Yes
+1143,Operations,Manager,Diploma,41,9,96962.83,3.3,3.2,Yes,15,Yes
+1144,Support,Executive,PhD,30,9,56312.04,3.8,1.1,No,3,Yes
+1145,Sales,Senior Engineer,Diploma,32,8,63958.13,3.3,4.1,No,4,No
+1146,Marketing,Coordinator,PhD,37,7,77824.1,4.5,3.5,Yes,12,No
+1147,Engineering,Manager,Diploma,32,4,108328.97,3.0,1.8,Yes,11,Yes
+1148,HR,Executive,Bachelor,31,3,82149.63,3.3,1.8,Yes,15,Yes
+1149,Marketing,Executive,Bachelor,22,1,35268.82,4.6,2.7,Yes,11,No
+1150,Finance,Coordinator,Diploma,31,5,59903.14,4.2,4.6,No,12,No
+1151,Sales,Director,Master,36,11,74745.59,4.2,4.5,No,14,No
+1152,Operations,Director,Master,29,8,65659.56,4.1,4.6,Yes,12,No
+1153,Support,Manager,PhD,38,14,98781.57,3.4,1.1,No,11,No
+1154,Sales,Coordinator,PhD,22,1,88005.7,2.3,2.0,Yes,13,Yes
+1155,Engineering,Director,PhD,28,7,39848.07,3.7,3.2,No,9,No
+1156,Support,Analyst,PhD,55,11,53584.12,2.6,3.7,No,9,No
+1157,HR,Director,PhD,25,3,96666.76,2.8,2.6,Yes,15,Yes
+1158,HR,Manager,Master,38,4,82663.07,4.8,3.1,Yes,7,No
+1159,Finance,Director,Master,30,2,103673.02,4.4,3.5,No,11,No
+1160,Finance,Director,Master,31,6,58624.0,4.4,2.7,No,13,No
+1161,Operations,Manager,Diploma,52,12,62430.49,4.4,1.9,No,7,No
+1162,Engineering,Director,PhD,22,1,48203.19,3.0,2.9,No,11,No
+1163,Sales,Coordinator,PhD,31,5,98798.28,4.6,1.2,No,13,No
+1164,Support,Manager,Master,22,1,68434.57,2.9,3.4,No,3,No
+1165,Finance,Director,Bachelor,50,12,101685.71,4.4,1.8,No,3,No
+1166,Operations,Analyst,Bachelor,57,26,107022.11,3.5,1.9,Yes,8,No
+1167,HR,Manager,Diploma,38,14,79693.53,2.7,1.6,No,8,No
+1168,HR,Director,PhD,37,16,108830.69,4.2,1.6,No,10,No
+1169,Operations,Director,Bachelor,51,12,117858.29,3.3,5.0,Yes,6,Yes
+1170,HR,Manager,Bachelor,23,1,47865.95,3.0,4.9,No,8,No
+1171,Marketing,Executive,Master,35,12,45981.98,3.2,1.5,Yes,6,No
+1172,Marketing,Coordinator,PhD,40,14,84884.3,2.2,2.2,No,7,No
+1173,Operations,Senior Engineer,Master,54,12,108554.35,4.9,3.6,Yes,6,Yes
+1174,Engineering,Analyst,Bachelor,27,1,48035.85,3.2,3.3,No,5,No
+1175,Finance,Coordinator,Diploma,34,8,96889.57,3.8,3.6,No,15,No
+1176,Support,Analyst,Diploma,31,10,89536.03,2.1,3.5,Yes,3,Yes
+1177,Operations,Senior Engineer,PhD,28,6,70561.8,2.0,4.5,Yes,9,No
+1178,Engineering,Analyst,Diploma,33,7,83866.24,3.7,3.3,Yes,9,No
+1179,Finance,Director,Master,58,23,114766.72,4.8,2.8,Yes,10,No
+1180,Engineering,Analyst,Bachelor,52,25,106590.57,3.9,1.8,Yes,7,No
+1181,Sales,Executive,Master,27,2,74852.58,4.6,1.5,Yes,10,Yes
+1182,Operations,Executive,Diploma,25,3,75455.46,4.6,3.9,Yes,9,Yes
+1183,Support,Coordinator,Bachelor,38,2,43134.29,4.2,1.0,Yes,11,No
+1184,Marketing,Senior Engineer,Diploma,46,10,79238.14,4.9,4.3,No,1,No
+1185,Sales,Director,Diploma,52,22,135018.06,2.5,4.9,Yes,11,Yes
+1186,Marketing,Analyst,PhD,52,13,100356.37,2.8,4.0,No,5,No
+1187,HR,Executive,Diploma,22,1,44880.19,3.8,2.2,No,4,No
+1188,Support,Analyst,PhD,36,13,60972.07,3.0,2.1,Yes,14,No
+1189,HR,Senior Engineer,Bachelor,31,10,92808.03,2.4,4.9,No,15,No
+1190,Operations,Executive,Diploma,56,18,86076.71,4.4,3.9,Yes,1,Yes
+1191,Finance,Senior Engineer,Bachelor,35,5,79574.9,3.8,1.0,No,2,No
+1192,Finance,Manager,Master,36,7,43684.62,4.7,3.1,No,9,No
+1193,Marketing,Executive,Master,35,4,55755.93,2.3,4.2,No,10,Yes
+1194,Engineering,Manager,PhD,37,2,94617.45,4.6,2.5,No,13,No
+1195,Support,Coordinator,Diploma,23,2,57503.21,2.8,3.4,Yes,14,Yes
+1196,Finance,Manager,PhD,58,7,87369.32,3.3,4.8,No,14,No
+1197,Finance,Senior Engineer,Diploma,24,2,103469.3,2.6,1.7,Yes,1,Yes
+1198,Marketing,Senior Engineer,Master,53,28,125548.93,3.8,2.6,Yes,2,No
+1199,Operations,Manager,Master,27,6,72093.42,3.5,1.7,Yes,4,Yes
+1200,Operations,Director,Diploma,24,2,75319.5,3.7,1.1,Yes,9,Yes
+1201,Finance,Coordinator,Diploma,25,1,65173.9,2.4,4.0,Yes,5,No
+1202,Sales,Director,Bachelor,28,4,66494.71,2.4,2.9,Yes,13,Yes
+1203,Engineering,Coordinator,PhD,51,23,124883.17,4.7,4.2,Yes,4,No
+1204,Marketing,Manager,Diploma,30,8,124249.09,3.2,1.1,Yes,6,No
+1205,Finance,Manager,Diploma,29,6,64884.46,2.4,1.9,Yes,8,Yes
+1206,Marketing,Executive,Bachelor,31,5,62985.96,2.1,3.3,No,3,Yes
+1207,Support,Director,Master,42,15,102897.02,4.7,1.5,No,15,Yes
+1208,Sales,Manager,Bachelor,57,16,108144.58,4.3,4.9,No,5,No
+1209,Engineering,Executive,PhD,46,10,80936.1,3.2,1.6,No,11,Yes
+1210,HR,Manager,PhD,54,5,52228.9,4.8,2.1,No,15,Yes
+1211,Finance,Analyst,Bachelor,58,6,100775.99,2.4,1.7,Yes,4,No
+1212,Engineering,Analyst,Diploma,53,25,112868.5,3.8,3.8,Yes,4,No
+1213,Engineering,Executive,Diploma,25,3,84132.89,3.0,4.4,No,2,No
+1214,Engineering,Senior Engineer,Diploma,30,5,75968.46,5.0,1.1,No,14,No
+1215,HR,Coordinator,Bachelor,55,3,108437.51,2.4,3.9,No,14,No
+1216,Engineering,Manager,Bachelor,40,4,100604.66,3.5,3.1,No,3,No
+1217,Engineering,Analyst,Master,36,10,78945.87,2.5,1.4,No,1,No
+1218,Engineering,Director,Master,38,1,87747.89,3.4,2.0,No,14,Yes
+1219,Engineering,Analyst,Diploma,24,2,44512.89,2.4,3.0,No,2,No
+1220,Engineering,Director,Diploma,30,9,48392.32,2.4,3.3,No,14,Yes
+1221,Support,Senior Engineer,PhD,48,20,83726.45,4.5,3.1,No,1,No
+1222,HR,Coordinator,Bachelor,47,8,103751.01,4.5,3.3,No,14,No
+1223,Operations,Director,Bachelor,42,17,71572.29,2.4,3.7,No,7,Yes
+1224,HR,Executive,Bachelor,45,4,72763.59,3.3,3.0,Yes,7,Yes
+1225,Operations,Coordinator,Bachelor,24,1,65842.73,4.6,3.5,No,5,No
+1226,Sales,Analyst,Bachelor,28,3,74294.33,2.7,1.2,Yes,11,Yes
+1227,Sales,Executive,Bachelor,54,29,123597.03,2.8,2.9,No,15,No
+1228,Support,Executive,Master,54,5,118693.09,3.7,2.1,Yes,5,No
+1229,Finance,Executive,Diploma,46,7,55730.98,3.6,2.5,No,5,No
+1230,Engineering,Senior Engineer,Master,41,1,74788.65,3.5,2.5,No,7,No
+1231,Sales,Senior Engineer,Bachelor,37,11,101639.22,3.7,3.0,No,15,No
+1232,Support,Executive,PhD,23,1,41002.19,3.0,3.6,No,7,No
+1233,Marketing,Manager,Master,28,5,66281.8,2.7,4.8,Yes,11,Yes
+1234,Operations,Director,Master,39,17,129874.06,4.8,5.0,No,13,No
+1235,Finance,Manager,Diploma,48,4,103552.79,2.0,4.1,No,7,Yes
+1236,HR,Coordinator,Diploma,39,4,61843.91,3.4,3.9,No,6,No
+1237,HR,Senior Engineer,Master,42,1,89566.55,4.4,4.4,No,7,No
+1238,Finance,Manager,PhD,56,10,100587.08,3.1,1.9,No,14,Yes
+1239,HR,Senior Engineer,PhD,35,7,60480.22,4.7,4.8,Yes,10,Yes
+1240,Marketing,Analyst,PhD,56,20,132742.68,3.6,3.7,No,8,No
+1241,HR,Director,Master,50,1,77446.3,4.0,3.1,Yes,9,Yes
+1242,Finance,Director,Bachelor,34,7,58832.32,3.9,5.0,No,12,No
+1243,Sales,Analyst,PhD,32,6,79796.39,3.0,4.9,No,9,No
+1244,Sales,Executive,Master,43,17,114850.83,2.5,2.2,No,15,Yes
+1245,Support,Analyst,PhD,25,1,54187.88,3.1,5.0,Yes,1,No
+1246,Support,Coordinator,PhD,57,1,97960.57,2.3,1.1,Yes,8,Yes
+1247,Engineering,Manager,Master,56,17,94072.52,5.0,3.3,No,10,No
+1248,HR,Analyst,Bachelor,55,25,110853.61,2.2,4.8,No,10,No
+1249,Engineering,Coordinator,Bachelor,42,5,80210.74,4.1,2.4,Yes,11,Yes
+1250,HR,Analyst,Master,44,7,65530.1,2.2,4.6,No,1,No
+1251,Support,Executive,PhD,37,8,89119.79,2.1,4.7,Yes,15,Yes
+1252,Sales,Executive,PhD,48,20,104883.83,4.9,1.3,No,10,No
+1253,Marketing,Executive,Master,47,23,151247.43,3.5,4.2,Yes,3,Yes
+1254,Operations,Analyst,Bachelor,22,1,51418.32,3.0,4.5,No,7,No
+1255,HR,Senior Engineer,PhD,49,27,127843.46,4.7,3.2,No,4,No
+1256,Finance,Manager,Diploma,37,14,120841.19,3.0,1.6,Yes,5,Yes
+1257,HR,Executive,Master,51,27,123530.76,4.4,2.0,No,12,Yes
+1258,Finance,Senior Engineer,Master,41,16,82244.73,3.4,1.5,No,8,No
+1259,Finance,Senior Engineer,Diploma,47,20,104564.24,3.5,1.5,Yes,2,No
+1260,Engineering,Analyst,PhD,23,1,59488.86,2.3,1.7,Yes,11,Yes
+1261,Sales,Director,Diploma,54,25,133750.65,2.9,1.3,No,5,Yes
+1262,Engineering,Senior Engineer,PhD,40,12,54241.63,4.3,4.5,Yes,3,No
+1263,Marketing,Director,Bachelor,48,1,101876.7,4.0,3.8,Yes,7,No
+1264,Sales,Executive,Master,33,5,109986.51,4.2,3.9,Yes,10,Yes
+1265,Finance,Manager,Diploma,41,5,109355.41,3.1,1.2,No,3,No
+1266,Operations,Senior Engineer,Bachelor,55,9,118298.87,3.7,4.7,Yes,13,No
+1267,Marketing,Director,Bachelor,25,2,55792.74,4.0,1.1,No,15,Yes
+1268,HR,Senior Engineer,Diploma,48,23,107200.64,3.8,1.9,No,7,Yes
+1269,Sales,Executive,Master,54,2,25000,4.0,1.8,No,13,No
+1270,Engineering,Manager,PhD,24,3,81945.88,2.5,1.7,Yes,4,No
+1271,HR,Director,Diploma,44,14,72005.88,2.3,3.5,Yes,12,Yes
+1272,Sales,Coordinator,Master,37,8,113653.03,2.4,3.6,No,12,Yes
+1273,Finance,Executive,Diploma,43,21,106032.96,4.4,3.2,Yes,3,No
+1274,Operations,Senior Engineer,Diploma,35,2,72040.7,3.5,1.2,No,2,Yes
+1275,Sales,Coordinator,Bachelor,29,3,69364.9,3.0,2.9,No,5,No
+1276,Finance,Senior Engineer,Bachelor,24,1,25000,3.5,4.0,No,12,No
+1277,Marketing,Analyst,PhD,53,14,109383.83,3.5,4.1,No,1,No
+1278,Operations,Coordinator,Master,38,8,112660.19,2.1,2.6,Yes,3,Yes
+1279,Operations,Senior Engineer,PhD,28,7,93544.58,4.2,2.2,No,3,Yes
+1280,Support,Director,Diploma,36,6,109020.12,4.5,2.0,Yes,10,Yes
+1281,Finance,Director,Bachelor,25,2,103143.64,3.5,3.0,Yes,10,No
+1282,Sales,Manager,PhD,31,4,85776.23,4.9,1.4,Yes,8,No
+1283,Sales,Senior Engineer,Bachelor,22,1,85034.15,4.5,4.4,No,7,No
+1284,HR,Senior Engineer,Bachelor,25,4,77764.39,2.0,4.8,Yes,3,No
+1285,Marketing,Coordinator,Diploma,50,26,110633.36,3.7,2.4,Yes,9,No
+1286,Support,Analyst,PhD,49,18,136444.7,4.9,4.8,No,2,No
+1287,Operations,Manager,PhD,41,19,79362.89,3.7,4.8,No,11,No
+1288,Engineering,Manager,PhD,43,17,102467.2,2.6,3.7,No,12,No
+1289,Marketing,Analyst,Master,57,19,104359.24,4.8,2.4,Yes,7,No
+1290,Marketing,Director,Diploma,33,4,66081.91,4.6,2.0,Yes,11,Yes
+1291,Finance,Coordinator,Bachelor,36,9,81193.99,3.4,3.2,Yes,15,No
+1292,Finance,Analyst,Diploma,48,22,127668.75,4.6,3.2,Yes,12,No
+1293,Support,Analyst,Master,47,18,111586.19,2.5,4.8,No,8,No
+1294,Marketing,Analyst,Master,45,20,117955.77,3.1,1.1,No,8,No
+1295,Operations,Senior Engineer,Master,49,3,85503.26,3.9,4.5,No,2,No
+1296,Finance,Director,PhD,45,24,129831.97,4.2,1.0,No,6,Yes
+1297,Finance,Analyst,Bachelor,53,2,50089.16,4.4,2.4,No,13,No
+1298,HR,Analyst,Bachelor,37,9,65736.15,2.1,5.0,No,1,Yes
+1299,Sales,Coordinator,PhD,38,6,104793.96,2.5,4.7,No,14,No
+1300,Support,Analyst,Bachelor,56,23,114236.72,3.3,1.1,Yes,8,No
+1301,Support,Executive,Master,26,2,53818.09,3.9,3.6,No,7,No
+1302,Sales,Coordinator,Bachelor,50,13,102257.9,3.6,2.4,No,15,Yes
+1303,HR,Executive,PhD,35,3,124614.84,4.5,3.9,No,10,No
+1304,Operations,Director,Master,42,1,62735.42,2.7,2.0,No,3,Yes
+1305,Finance,Coordinator,Master,39,13,111049.49,2.8,3.0,No,6,No
+1306,Engineering,Senior Engineer,PhD,24,3,77625.88,2.6,2.7,No,11,No
+1307,Support,Director,Master,37,5,73360.88,4.0,2.2,No,9,No
+1308,Marketing,Manager,Master,44,18,96939.64,4.1,3.7,No,9,No
+1309,Finance,Senior Engineer,Master,44,5,63670.93,2.4,1.0,No,7,Yes
+1310,Sales,Coordinator,Bachelor,26,2,64138.81,4.2,3.2,No,2,No
+1311,Operations,Executive,Bachelor,33,5,93187.57,3.7,4.9,No,13,No
+1312,Operations,Analyst,Master,53,11,106847.24,2.8,1.1,Yes,4,No
+1313,Finance,Director,Bachelor,25,4,62681.67,3.3,4.6,No,14,No
+1314,Engineering,Manager,PhD,34,4,70607.29,3.8,1.3,No,3,Yes
+1315,Support,Director,Bachelor,56,21,58977.19,4.6,3.6,Yes,6,Yes
+1316,Marketing,Executive,Diploma,53,13,69205.06,2.5,4.5,Yes,10,Yes
+1317,Engineering,Executive,PhD,38,15,71051.2,4.6,1.1,No,6,No
+1318,Marketing,Executive,PhD,32,2,85656.33,3.6,4.4,No,14,No
+1319,Marketing,Manager,PhD,56,22,113203.4,3.8,3.2,No,10,No
+1320,Marketing,Senior Engineer,PhD,52,25,142805.83,4.0,3.2,No,9,No
+1321,Sales,Executive,Bachelor,30,5,81401.28,2.0,2.9,No,11,Yes
+1322,Marketing,Director,Master,23,1,84911.26,2.6,4.1,No,10,No
+1323,Marketing,Director,Master,33,12,104793.32,4.6,4.1,No,1,No
+1324,Marketing,Analyst,Bachelor,50,28,89761.98,3.0,4.2,No,4,No
+1325,Sales,Coordinator,Diploma,22,1,66689.87,4.4,4.7,No,1,No
+1326,Sales,Senior Engineer,Master,48,13,121329.01,2.7,2.0,No,4,No
+1327,Support,Manager,Diploma,42,14,84475.71,3.9,2.2,No,10,Yes
+1328,Finance,Coordinator,Diploma,39,5,86500.91,3.0,2.9,Yes,11,Yes
+1329,Support,Executive,Master,35,10,70577.88,2.2,4.1,No,13,Yes
+1330,Sales,Senior Engineer,Master,49,28,147754.31,4.1,4.2,Yes,1,No
+1331,HR,Analyst,Diploma,54,24,149915.46,3.1,4.0,No,11,No
+1332,Support,Director,Bachelor,43,21,132577.19,4.6,4.9,Yes,4,No
+1333,Engineering,Analyst,PhD,24,1,51743.55,3.5,1.9,No,12,No
+1334,Sales,Director,Bachelor,26,1,84907.63,2.4,2.7,Yes,9,Yes
+1335,Support,Manager,Bachelor,55,12,112075.8,4.5,4.8,Yes,4,Yes
+1336,Marketing,Senior Engineer,Bachelor,39,6,96560.58,4.9,1.8,Yes,9,Yes
+1337,Operations,Executive,PhD,42,2,77510.51,4.0,3.2,No,6,No
+1338,HR,Manager,Bachelor,47,14,87329.79,4.9,2.5,No,15,No
+1339,Engineering,Analyst,Bachelor,37,9,103458.81,4.1,3.9,Yes,11,No
+1340,Finance,Analyst,Diploma,25,4,66115.7,3.9,3.2,No,8,No
+1341,Support,Director,Diploma,52,17,85866.53,3.0,3.2,No,4,No
+1342,Operations,Coordinator,Master,44,23,158531.54,2.8,3.6,No,2,No
+1343,Finance,Executive,Master,38,9,106307.4,4.7,2.9,No,9,No
+1344,Operations,Manager,Master,31,2,93620.13,3.6,3.1,No,4,No
+1345,Support,Executive,Bachelor,51,6,74783.04,3.9,4.3,Yes,6,Yes
+1346,Marketing,Executive,Bachelor,48,5,77211.08,3.1,3.7,No,9,No
+1347,Operations,Manager,Master,39,13,72757.42,2.9,2.8,Yes,8,Yes
+1348,HR,Senior Engineer,Bachelor,22,1,50240.57,2.7,2.5,No,13,No
+1349,Finance,Senior Engineer,PhD,57,7,107498.99,2.0,2.0,No,12,Yes
+1350,Support,Senior Engineer,PhD,38,8,81324.93,3.6,3.0,Yes,7,Yes
+1351,HR,Director,PhD,24,3,91672.73,3.3,2.5,No,7,No
+1352,Sales,Senior Engineer,Bachelor,44,8,66035.38,4.8,1.8,No,11,Yes
+1353,Operations,Analyst,Bachelor,27,4,90346.17,3.1,3.1,No,15,No
+1354,HR,Executive,Master,58,15,130424.47,3.3,5.0,Yes,8,No
+1355,Operations,Senior Engineer,PhD,54,25,102968.86,4.5,3.7,Yes,1,Yes
+1356,Support,Manager,Diploma,46,25,103685.66,4.5,3.3,Yes,2,Yes
+1357,HR,Coordinator,Master,25,2,71366.38,4.1,2.9,Yes,12,No
+1358,Marketing,Coordinator,PhD,48,27,142590.62,3.0,1.8,Yes,9,Yes
+1359,HR,Coordinator,Diploma,27,3,80190.0,3.2,3.7,No,9,No
+1360,Sales,Manager,Bachelor,25,3,57218.56,4.4,4.4,No,5,No
+1361,Finance,Manager,PhD,35,9,121526.24,4.0,4.7,No,12,No
+1362,Finance,Senior Engineer,Bachelor,43,7,53732.48,4.0,3.9,Yes,7,No
+1363,Finance,Executive,Diploma,39,8,92271.18,4.4,2.2,Yes,10,No
+1364,Engineering,Coordinator,Diploma,50,7,91669.33,3.3,3.6,Yes,15,Yes
+1365,Operations,Director,PhD,33,1,66118.27,4.8,3.2,Yes,11,No
+1366,Support,Analyst,Bachelor,35,9,89614.39,4.8,1.8,Yes,4,No
+1367,Support,Analyst,Master,48,8,77856.99,4.0,2.0,No,3,No
+1368,Finance,Director,Master,24,1,75890.36,2.7,3.3,No,12,No
+1369,Sales,Executive,Bachelor,41,9,71806.49,3.0,4.4,Yes,11,No
+1370,Sales,Executive,PhD,42,13,101739.29,4.0,3.8,Yes,12,No
+1371,Finance,Analyst,PhD,47,4,94777.64,2.1,2.4,Yes,9,No
+1372,Marketing,Coordinator,Bachelor,53,12,130062.88,4.7,4.7,Yes,14,No
+1373,Engineering,Coordinator,Bachelor,34,3,78186.78,3.4,4.1,Yes,5,No
+1374,Marketing,Director,PhD,22,1,70435.76,2.9,1.7,No,4,Yes
+1375,Engineering,Director,Bachelor,33,2,83198.71,4.4,2.2,Yes,8,No
+1376,HR,Coordinator,PhD,32,10,79763.22,2.1,3.3,No,3,No
+1377,Operations,Analyst,PhD,26,3,74461.07,4.2,3.9,No,3,No
+1378,Finance,Analyst,PhD,22,1,61376.55,2.3,2.0,Yes,9,No
+1379,Marketing,Manager,PhD,51,8,103297.63,2.5,3.1,No,5,No
+1380,Engineering,Analyst,Bachelor,47,18,105006.41,2.7,4.5,No,4,No
+1381,Engineering,Manager,Master,25,4,82186.05,4.4,3.8,Yes,4,No
+1382,Sales,Manager,Master,38,1,48047.08,2.3,3.3,Yes,10,Yes
+1383,Engineering,Manager,Master,54,23,125159.97,4.5,4.3,Yes,2,No
+1384,Support,Executive,Bachelor,41,11,118254.79,3.8,1.7,No,7,No
+1385,Support,Manager,Master,27,2,86996.46,2.4,3.0,Yes,6,Yes
+1386,Support,Senior Engineer,Bachelor,34,4,63514.46,2.2,1.0,No,9,Yes
+1387,Operations,Director,PhD,26,2,40694.88,4.6,1.2,No,2,No
+1388,HR,Director,Master,32,8,65556.38,2.4,4.3,No,12,No
+1389,Operations,Coordinator,Bachelor,49,13,66035.03,4.5,4.1,No,5,No
+1390,HR,Coordinator,Bachelor,26,3,71274.3,2.7,3.4,No,4,No
+1391,HR,Executive,Bachelor,47,22,69214.56,4.4,4.2,No,14,No
+1392,Marketing,Analyst,PhD,36,11,70409.25,4.0,4.6,No,13,No
+1393,Marketing,Executive,Master,53,20,76145.85,2.0,1.4,No,10,Yes
+1394,Engineering,Senior Engineer,Master,43,18,104630.23,4.5,3.5,No,6,No
+1395,Engineering,Executive,Master,50,14,115402.08,4.0,4.2,Yes,11,Yes
+1396,Marketing,Executive,PhD,46,9,82422.05,2.5,2.4,No,7,No
+1397,Engineering,Manager,Bachelor,54,26,126731.13,5.0,1.8,Yes,1,Yes
+1398,Support,Coordinator,Diploma,37,15,66662.02,4.2,3.7,No,12,No
+1399,Marketing,Senior Engineer,PhD,30,5,64034.11,4.0,1.3,No,5,Yes
