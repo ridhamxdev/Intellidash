@@ -25,9 +25,12 @@ app = FastAPI(
 )
 
 # ─── CORS ─────────────────────────────────────────────────────────────────────
-# FRONTEND_URL env var is set in Render dashboard to your Vercel URL.
+# FRONTEND_URL env var → set in Vercel / Render dashboard to your frontend URL.
+# ALLOWED_ORIGINS env var → comma-separated list for extra origins (optional).
 # Falls back to localhost for local development.
 _frontend_url = os.getenv("FRONTEND_URL", "")
+_extra_origins = os.getenv("ALLOWED_ORIGINS", "")
+
 _allowed_origins = [
     "http://localhost:3000",
     "http://localhost:5173",
@@ -35,6 +38,11 @@ _allowed_origins = [
 ]
 if _frontend_url:
     _allowed_origins.append(_frontend_url.rstrip("/"))
+if _extra_origins:
+    for o in _extra_origins.split(","):
+        o = o.strip().rstrip("/")
+        if o and o not in _allowed_origins:
+            _allowed_origins.append(o)
 
 app.add_middleware(
     CORSMiddleware,

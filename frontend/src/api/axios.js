@@ -1,7 +1,11 @@
 import axios from 'axios'
 
-// In production (Vercel), VITE_API_URL is set to your Render backend URL.
-// In local dev, the Vite proxy forwards /api → localhost:8000, so baseURL stays '/api'.
+// VITE_API_URL is set in Vercel environment variables to the backend service URL.
+// Locally, the Vite dev proxy forwards /api → localhost:8000, so no env var needed.
+//
+// Vercel multi-service:  VITE_API_URL = https://intellidash-backend.vercel.app
+// Render backend:        VITE_API_URL = https://intellidash-backend.onrender.com
+// Local dev:             (leave unset — proxy handles it)
 const BASE_URL = import.meta.env.VITE_API_URL
   ? `${import.meta.env.VITE_API_URL}/api`
   : '/api'
